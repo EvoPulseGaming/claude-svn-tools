@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "svn": {
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/svn_mcp_server.py"],
+      "env": {
+        "SVN_DEFAULT_WC": "",
+        "SVN_TIMEOUT_SEC": "60",
+        "SVN_MAX_OUTPUT_BYTES": "200000"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "claude-svn-tools",
+  "owner": {
+    "name": "Sascha Elble"
+  },
+  "description": "Subversion (SVN) integration for Claude Code and Cowork. Adds MCP tools for status, log, diff, blame, update, merge, and other working-copy operations — without exposing destructive repo writes.",
+  "homepage": "https://github.com/EvoPulseGaming/claude-svn-tools",
+  "repository": "https://github.com/EvoPulseGaming/claude-svn-tools",
+  "plugins": [
+    {
+      "name": "svn-tools",
+      "source": "./plugins/svn-tools",
+      "description": "Subversion (SVN) access for Claude — wraps the local svn CLI as MCP tools so Claude can run status, log, diff, update, and other safe operations against your working copy.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Sascha Elble"
+      },
+      "homepage": "https://github.com/EvoPulseGaming/claude-svn-tools",
+      "repository": "https://github.com/EvoPulseGaming/claude-svn-tools",
+      "license": "Unlicense",
+      "keywords": ["svn", "subversion", "version-control", "vcs"]
+    }
+  ]
+}

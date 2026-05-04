@@ -1,0 +1,27 @@
+# Default: detect text and normalize line endings on commit (LF in repo).
+* text=auto
+
+# Force LF in working tree for source/text files. Avoids spurious CRLF/LF
+# diffs when collaborators are on different OSes.
+*.py    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+LICENSE text eol=lf
+
+# Windows-only scripts must keep CRLF.
+*.bat   text eol=crlf
+*.ps1   text eol=crlf
+*.cmd   text eol=crlf
+
+# Binary artifacts — never line-ending normalized, never diffed as text.
+*.plugin binary
+*.zip    binary
+*.gz     binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
